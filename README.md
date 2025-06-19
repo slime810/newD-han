@@ -1,24 +1,5 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# D班のRailsプロジェクトです。
+## リポジトリのクローンの手順
+### 1.ホーム画面で[Code]をクリック -> [SSH]クリック -> 「git@github.com:slime810/D-han.git」をコピー
+### 2.githubを開き、リポジトリを置きたい場所にパスに移動
+### 3.githubで「git clone コピーした内容貼り付け」で実行
