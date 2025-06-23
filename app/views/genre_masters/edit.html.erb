@@ -1,0 +1,12 @@
+<% content_for :title, "Editing genre master" %>
+
+<h1>Editing genre master</h1>
+
+<%= render "form", genre_master: @genre_master %>
+
+<br>
+
+<div>
+  <%= link_to "Show this genre master", @genre_master %> |
+  <%= link_to "Back to genre masters", genre_masters_path %>
+</div>
