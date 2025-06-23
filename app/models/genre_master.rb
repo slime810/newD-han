@@ -1,2 +1,0 @@
-class GenreMaster < ApplicationRecord
-end
