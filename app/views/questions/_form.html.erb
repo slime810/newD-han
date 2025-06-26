@@ -1,0 +1,62 @@
+<%= form_with(model: question) do |form| %>
+  <% if question.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(question.errors.count, "error") %> prohibited this question from being saved:</h2>
+
+      <ul>
+        <% question.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :question_id, style: "display: block" %>
+    <%= form.number_field :question_id %>
+  </div>
+
+  <div>
+    <%= form.label :question_stantement, style: "display: block" %>
+    <%= form.textarea :question_stantement %>
+  </div>
+
+  <div>
+    <%= form.label :explanation, style: "display: block" %>
+    <%= form.textarea :explanation %>
+  </div>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.label :genre_id, style: "display: block" %>
+    <%= form.number_field :genre_id %>
+  </div>
+
+  <div>
+    <%= form.label :choices1, style: "display: block" %>
+    <%= form.text_field :choices1 %>
+  </div>
+
+  <div>
+    <%= form.label :choices2, style: "display: block" %>
+    <%= form.text_field :choices2 %>
+  </div>
+
+  <div>
+    <%= form.label :choices3, style: "display: block" %>
+    <%= form.text_field :choices3 %>
+  </div>
+
+  <div>
+    <%= form.label :choices4, style: "display: block" %>
+    <%= form.text_field :choices4 %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
