@@ -6,27 +6,30 @@
 
 ## データベースの設計構造
 ```txt
-テーブル名:GenreMaster
+テーブル名:Genre
 
 フィールド名:genre_id(主キー)
             genre_name
 ```
 ```txt
-テーブル名:UserMaster
+テーブル名:User
 
 フィールド名:user_id(主キー)
             user_name
-            email
+            mail
+            password
 ```
 ```txt
-テーブル名:QuestionMaster
+テーブル名:Question
 
 フィールド名:question_id(主キー)
-            question_text
-            explanation_text
-            create_date
-            genre_id(外部キー)
-            correct_answer
+            question_stantement
+            explanation
             user_id(外部キー)
+            genre_id(外部キー)
+            choices1
+            choices2
+            choices3
+            choices4
 ```
 
